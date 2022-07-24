@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Rich Text</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <script src="node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+
+</head>
+
+<body>
+    <div class="main-content">
+
+        <!--butões-->
+        <div class="text-editor-header">
+            <button type="button" class="btn" id="negrito" data-element="bold">
+                <i class="fa fa-bold"></i>
+            </button>
+
+            <button type="button" class="btn" id="italico" data-element="italic">
+                <i class="fa fa-italic"></i>
+            </button>
+
+            <button type="button" class="btn" id="sublinhado" data-element="underline">
+                <i class="fa fa-underline"></i>
+            </button>
+
+            <button type="button" class="btn" id="lista" data-element="insertUnorderedList">
+                <i class="fa fa-list-ul"></i>
+            </button>
+
+            <button type="button" class="btn" id="lista-ordenada" data-element="insertOrderedList">
+                <i class="fa fa-list-ol"></i>
+            </button>
+
+            <button type="button" class="btn" data-element="createLink">
+                <i class="fa fa-link"></i>
+            </button>
+
+            <button type="button" class="btn" id="esquerda" data-element="justifyLeft">
+                <i class="fa fa-align-left"></i>
+            </button>
+
+            <button type="button" class="btn" id="centro" data-element="justifyCenter">
+                <i class="fa fa-align-center"></i>
+            </button>
+
+            <button type="button" class="btn" id="direita" data-element="justifyRight">
+                <i class="fa fa-align-rigth"></i>
+            </button>
+
+            <button type="button" class="btn" data-element="justifyFull">
+                <i class="fa fa-align-justify"></i>
+            </button>
+
+            <button type="button" class="btn" data-element="insertImage">
+                <i class="fa fa-image"></i>
+            </button>
+
+            <span class="titulos">T:</span>
+            <select class="btn" data-element="fontSize" id="tam-texto">
+                <option value="1px">1</option>
+                <option value="2px">2</option>
+                <option value="4px">4</option>
+                <option value="5px" selected>5</option>
+                <option value="7px">7</option>
+                <option value="8px">8</option>
+                <option value="10px">10</option>
+            </select>
+
+            <span class="titulos">C:</span>
+           
+            <select class="btn" data-element="fontSize" id="cores">
+                <option value="#fff" class="cor"> branco </option>
+                <option value="#0f0" class="cor"> verde </option>
+                <option value="#00f" class="cor"> azul </option>
+                <option value="#f00" class="cor"> vermelho </option>
+            </select>
+
+        </div>
+        <!--butões fim-->
+        <!--editor-->
+
+        <div class="content" contenteditable="true"></div>
+
+        <!--fim editor-->
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
